@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Milestone English | Official Link Bio</title>
+    
+    <!-- PWA & Mobile Meta Tags -->
+    <meta name="theme-color" content="#101c33">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link id="manifest-link" rel="manifest" href="">
+
+    <!-- Professional Google Fonts: Cinzel + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkblue: '#101c33',
+                        darkcard: '#16223d',
+                        brandorange: '#f37737',
+                        accentgold: '#e09858',
+                        softsand: '#f8f4ee'
+                    },
+                    fontFamily: {
+                        brand: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b1324;
+            color: #ffffff;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .font-brand {
+            font-family: 'Cinzel', serif;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Glassmorphism Capsule Button dengan Garis Luar Orange */
+        .capsule-btn {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1.5px solid #f37737;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(243, 119, 55, 0.18);
+            transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .capsule-btn:hover {
+            background: linear-gradient(135deg, #f37737 0%, #e06325 100%);
+            border-color: #f37737;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px -4px rgba(243, 119, 55, 0.65), 0 0 15px rgba(243, 119, 55, 0.35);
+        }
+
+        .capsule-btn:active {
+            transform: scale(0.97);
+        }
+
+        /* Floating Social Dock Capsule */
+        .social-dock {
+            background: rgba(22, 34, 61, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(243, 119, 55, 0.35);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .social-circle-btn {
+            border: 1px solid rgba(243, 119, 55, 0.5);
+            transition: all 0.25s ease;
+        }
+        .social-circle-btn:hover {
+            border-color: #f37737;
+            background-color: rgba(243, 119, 55, 0.25);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px rgba(243, 119, 55, 0.3);
+        }
+
+        /* Ambient Hero Blur */
+        .hero-banner-gradient {
+            background: linear-gradient(180deg, rgba(16, 28, 51, 0.2) 0%, rgba(16, 28, 51, 0.75) 60%, #101c33 100%);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #233558;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex justify-center items-start md:items-center bg-[#070c17] p-0 md:py-6 antialiased selection:bg-brandorange selection:text-white">
+
+    <!-- Efek Ambient Glow Latar Belakang Desktop -->
+    <div class="fixed top-[-10%] left-[-15%] w-96 h-96 bg-brandorange/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="fixed bottom-[-10%] right-[-15%] w-96 h-96 bg-blue-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <!-- Container Utama: Menyesuaikan layar ponsel atau frame di Desktop -->
+    <div class="w-full max-w-md min-h-screen md:min-h-[880px] md:max-h-[94vh] md:rounded-[3rem] bg-darkblue border border-white/10 md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85)] relative flex flex-col overflow-hidden">
+        
+        <!-- ============================================================== -->
+        <!-- VIEW 1: TAMPILAN USER (BRAND LINK BIO)                         -->
+        <!-- ============================================================== -->
+        <div id="view-public" class="flex-grow flex flex-col overflow-y-auto relative z-10 pb-6">
+            
+            <!-- SECTION 1: HERO HEADER DENGAN BANNER & AVATAR -->
+            <div class="relative w-full pt-8 pb-4 flex flex-col items-center overflow-hidden">
+                
+                <!-- Background Banner Interior Kelas/Lounge -->
+                <div class="absolute top-0 left-0 right-0 h-64 z-0 overflow-hidden">
+                    <img id="public-banner" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" 
+                         alt="Milestone English Interior" 
+                         class="w-full h-full object-cover opacity-35 filter brightness-90">
+                    <div class="absolute inset-0 hero-banner-gradient"></div>
+                </div>
+
+                <!-- Kontainer Avatar dengan Garis Pembatas Dekoratif (--●-- [AVATAR] --●--) -->
+                <div class="relative z-10 w-full flex items-center justify-center px-4 mt-6 mb-5">
+                    
+                    <!-- Garis Kiri dengan Titik Dekoratif -->
+                    <div class="flex-1 flex items-center justify-end">
+                        <span class="w-2.5 h-2.5 rounded-full bg-accentgold/80 shadow-[0_0_8px_rgba(243,119,55,0.6)]"></span>
+                        <div class="h-[1.5px] bg-gradient-to-r from-accentgold/70 to-accentgold/30 w-full ml-1"></div>
+                    </div>
+
+                    <!-- Lingkaran Foto Profil / Logo Resmi -->
+                    <div class="mx-3.5 relative flex-shrink-0">
+                        <div class="w-32 h-32 rounded-full p-1 border-2 border-accentgold/80 bg-white shadow-[0_0_30px_rgba(243,119,55,0.35)] relative overflow-hidden group flex items-center justify-center">
+                            <img id="public-photo" 
+                                 src="logo.jpg" 
+                                 alt="Milestone English" 
+                                 class="w-full h-full rounded-full object-contain bg-white"
+                                 onerror="if(typeof DEFAULT_LOGO!=='undefined') { this.onerror=null; this.src=DEFAULT_LOGO; }">
+                        </div>
+                    </div>
+
+                    <!-- Garis Kanan dengan Titik Dekoratif -->
+                    <div class="flex-1 flex items-center justify-start">
+                        <div class="h-[1.5px] bg-gradient-to-r from-accentgold/30 to-accentgold/70 w-full mr-1"></div>
+                        <span class="w-2.5 h-2.5 rounded-full bg-accentgold/80 shadow-[0_0_8px_rgba(243,119,55,0.6)]"></span>
+                    </div>
+
+                </div>
+
+                <!-- SECTION 2: LOGO RESMI & TIPOGRAFI BRAND (MILESTONE ENGLISH) -->
+                <div class="relative z-10 text-center px-6 mt-1 flex flex-col items-center">
+                    <h1 id="public-username" class="font-brand text-xl font-bold tracking-[0.22em] text-white uppercase">
+                        MILESTONE ENGLISH
+                    </h1>
+                    <p id="public-tagline" class="text-[10px] tracking-[0.25em] text-accentgold font-medium uppercase mt-1 border-t border-accentgold/30 pt-1.5 px-6">
+                        ACADEMY & LANGUAGE CENTER
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- SECTION 3: DAFTAR TOMBOL UTAMA (GRID 2 KOLOM KAPSUL ELEGAN) -->
+            <div class="px-5 sm:px-6 w-full mt-3 flex-grow flex flex-col justify-start">
+                
+                <!-- Indikator Loading Skeleton -->
+                <div id="loading-skeleton" class="grid grid-cols-2 gap-3.5 w-full my-4">
+                    <div class="h-12 bg-white/5 rounded-full animate-pulse border border-brandorange/20"></div>
+                    <div class="h-12 bg-white/5 rounded-full animate-pulse border border-brandorange/20"></div>
+                    <div class="h-12 bg-white/5 rounded-full animate-pulse border border-brandorange/20"></div>
+                    <div class="h-12 bg-white/5 rounded-full animate-pulse border border-brandorange/20"></div>
+                </div>
+
+                <!-- Grid 2 Kolom untuk Tautan Kapsul -->
+                <main id="public-links-container" class="grid grid-cols-2 gap-3.5 w-full hidden">
+                    <!-- Tombol kapsul dirender dinamis di sini -->
+                </main>
+
+                <!-- SECTION 4: DESKRIPSI & VALUE PROPOSITION PROFIL -->
+                <div class="mt-7 mb-6 text-center px-3 max-w-sm mx-auto">
+                    <p id="public-bio" class="text-xs sm:text-[13px] text-gray-300 font-normal leading-relaxed tracking-wide">
+                        Ruang belajar modern yang dirancang untuk memberikan kenyamanan, kepercayaan diri, dan pengalaman belajar bahasa Inggris yang menyenangkan serta berorientasi pada pencapaian nyata.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- SECTION 5: FLOATING SOCIAL NAVIGATION DOCK (KAPSUL NAVIGASI BAWAH) -->
+            <div id="social-dock-container" class="px-5 w-full mt-auto pt-2 pb-1">
+                <div class="social-dock w-full rounded-full py-2 px-3 flex items-center justify-around relative">
+                    
+                    <!-- Ikon 1: YouTube -->
+                    <a id="btn-social-youtube" href="#" target="_blank" rel="noopener noreferrer" title="YouTube Channel"
+                       class="social-circle-btn w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+
+                    <!-- Ikon 2: Google Maps / Alamat Kampus -->
+                    <a id="btn-social-maps" href="#" target="_blank" rel="noopener noreferrer" title="Lokasi Kampus"
+                       class="social-circle-btn w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </a>
+
+                    <!-- Ikon 3: WhatsApp (TOMBOL TENGAH TIMBUL) -->
+                    <div id="wrapper-social-whatsapp" class="relative -top-4 flex items-center justify-center">
+                        <a id="btn-social-whatsapp" href="#" target="_blank" rel="noopener noreferrer" title="Konsultasi WhatsApp"
+                           class="w-14 h-14 rounded-full bg-gradient-to-tr from-brandorange to-amber-500 text-white shadow-[0_8px_25px_rgba(243,119,55,0.6)] border-[2.5px] border-white/90 flex items-center justify-center transform hover:scale-110 active:scale-95 transition-all duration-300">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Ikon 4: Instagram -->
+                    <a id="btn-social-instagram" href="#" target="_blank" rel="noopener noreferrer" title="Instagram Resmi"
+                       class="social-circle-btn w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+
+                    <!-- Ikon 5: Official Website / Portal -->
+                    <a id="btn-social-website" href="#" target="_blank" rel="noopener noreferrer" title="Website Resmi"
+                       class="social-circle-btn w-10 h-10 rounded-full flex items-center justify-center text-gray-300 hover:text-white">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- SECTION 6: FOOTER RESMI & LINK ADMIN -->
+            <footer class="mt-3 text-center text-[11px] text-gray-400 pb-2 w-full flex flex-col items-center gap-1.5">
+                <p id="footer-copyright" class="tracking-wide">
+                    © 2026 Milestone English. All rights reserved.
+                </p>
+                <button onclick="handleAdminClick()" class="text-[10px] text-gray-400 hover:text-accentgold transition-colors inline-flex items-center gap-1 opacity-75 hover:opacity-100 font-medium">
+                    <span>⚙️ Admin</span>
+                </button>
+            </footer>
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- MODAL LOGIN PIN ADMIN                                          -->
+        <!-- ============================================================== -->
+        <div id="modal-pin" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+            <div class="w-full max-w-xs bg-darkcard border border-brandorange/70 rounded-3xl p-6 text-center shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_25px_rgba(243,119,55,0.25)] fade-in">
+                <div class="w-12 h-12 rounded-full bg-brandorange/20 text-brandorange border border-brandorange/40 flex items-center justify-center mx-auto mb-3 shadow-[0_0_15px_rgba(243,119,55,0.3)]">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                </div>
+                <h3 class="text-base font-bold text-white mb-1 font-brand tracking-wider">Akses Admin</h3>
+                <p class="text-xs text-gray-400 mb-4">Masukkan PIN keamanan untuk melanjutkan</p>
+                
+                <form id="form-pin" onsubmit="handlePinSubmit(event)">
+                    <input type="password" id="input-pin" inputmode="numeric" maxlength="12" placeholder="••••" required autofocus
+                           class="w-full text-center tracking-[0.5em] text-2xl font-bold py-2.5 px-3 bg-gray-900 border border-gray-700 rounded-xl text-white focus:outline-none focus:border-brandorange mb-4">
+                    <div class="flex gap-2">
+                        <button type="button" onclick="closeAdminPinModal()" class="w-1/2 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-xs font-semibold text-gray-300 transition-colors">Batal</button>
+                        <button type="submit" id="btn-submit-pin" class="w-1/2 py-2 rounded-xl bg-brandorange hover:bg-orange-500 text-xs font-semibold text-white transition-colors">Masuk</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- VIEW 2: DASHBOARD ADMIN                                        -->
+        <!-- ============================================================== -->
+        <div id="view-admin" class="hidden absolute inset-0 z-40 bg-gray-900 flex flex-col overflow-y-auto">
+            <!-- Header Admin -->
+            <div class="p-4 border-b border-gray-800 flex items-center justify-between sticky top-0 bg-gray-900/95 backdrop-blur z-20">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <h2 class="text-sm font-bold text-white font-brand tracking-wider">Milestone Admin</h2>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="handleLogout()" class="px-2.5 py-1 text-xs text-red-400 hover:bg-red-400/10 rounded-lg transition-colors font-medium">Keluar</button>
+                    <button onclick="closeAdminDashboard()" class="px-3.5 py-1.5 bg-gray-800 text-xs rounded-xl border border-gray-700 hover:bg-gray-700 text-white font-medium transition-colors">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Navigasi Admin -->
+            <div class="flex border-b border-gray-800 bg-gray-900/60 px-4 pt-2">
+                <button onclick="switchAdminTab('links')" id="tab-btn-links" class="flex-1 pb-2.5 text-xs font-semibold text-brandorange border-b-2 border-brandorange transition-colors">
+                    🔗 Menu Tautan
+                </button>
+                <button onclick="switchAdminTab('profile')" id="tab-btn-profile" class="flex-1 pb-2.5 text-xs font-semibold text-gray-400 border-b-2 border-transparent transition-colors">
+                    🏛️ Profil & Navigasi
+                </button>
+                <button onclick="switchAdminTab('security')" id="tab-btn-security" class="flex-1 pb-2.5 text-xs font-semibold text-gray-400 border-b-2 border-transparent transition-colors">
+                    🔒 Ganti PIN
+                </button>
+            </div>
+
+            <!-- Konten Tab Admin -->
+            <div class="p-4 flex-grow flex flex-col gap-5">
+                
+                <!-- TAB 1: KELOLA TAUTAN KAPSUL -->
+                <div id="tab-content-links" class="flex flex-col gap-5">
+                    <div class="bg-gray-800/80 p-4 rounded-2xl border border-gray-700/80 shadow-md">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-brandorange mb-3 flex items-center gap-1.5">
+                            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/></svg>
+                            Tambah Tombol Tautan Baru
+                        </h3>
+                        <form id="add-link-form" onsubmit="handleAddLink(event)" class="flex flex-col gap-2.5">
+                            <input type="text" id="input-title" placeholder="Nama Tombol (misal: BROSUR KURSUS)" required
+                                   class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white uppercase focus:outline-none focus:border-brandorange">
+                            <input type="url" id="input-url" placeholder="URL Tujuan (https://...)" required
+                                   class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                            
+                            <button type="submit" id="btn-add-link" class="w-full bg-brandorange hover:bg-orange-500 text-white font-semibold py-2.5 rounded-xl text-xs transition-colors mt-1">
+                                Simpan
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- List Tautan Admin dengan Tombol Edit & Hapus -->
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xs font-semibold text-gray-400">Daftar Tombol Aktif</h3>
+                            <span id="links-count" class="text-[11px] text-gray-500">0 tombol</span>
+                        </div>
+                        <div id="admin-links-list" class="flex flex-col gap-2.5"></div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: EDIT PROFIL USAHA & NAVIGASI BAWAH (DENGAN TOGGLE ON/OFF) -->
+                <div id="tab-content-profile" class="hidden flex flex-col gap-4">
+                    <div class="bg-gray-800/80 p-4 rounded-2xl border border-gray-700/80">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-brandorange mb-3">Identitas Bisnis</h3>
+                        <form id="edit-profile-form" onsubmit="handleUpdateProfile(event)" class="flex flex-col gap-3">
+                            <div>
+                                <label class="text-[11px] text-gray-400 block mb-1">Nama Brand / Lembaga</label>
+                                <input type="text" id="profile-input-username" required
+                                       class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                            </div>
+
+                            <div>
+                                <label class="text-[11px] text-gray-400 block mb-1">Tagline Lembaga</label>
+                                <input type="text" id="profile-input-tagline" placeholder="ACADEMY & LANGUAGE CENTER"
+                                       class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                            </div>
+
+                            <div>
+                                <label class="text-[11px] text-gray-400 block mb-1">Deskripsi / Value Proposition</label>
+                                <textarea id="profile-input-bio" rows="3"
+                                          class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange"></textarea>
+                            </div>
+
+                            <div>
+                                <label class="text-[11px] text-gray-400 block mb-1">URL Foto Profil / Logo</label>
+                                <input type="text" id="profile-input-photo" placeholder="DEFAULT_LOGO atau https://..."
+                                       class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                            </div>
+
+                            <div>
+                                <label class="text-[11px] text-gray-400 block mb-1">URL Banner Header (Interior/Ruangan)</label>
+                                <input type="url" id="profile-input-banner" placeholder="https://..."
+                                       class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                            </div>
+
+                            <!-- PENGATURAN TOMBOL NAVIGASI BAWAH DENGAN ON/OFF TOGGLE -->
+                            <div class="pt-3 border-t border-gray-700/80">
+                                <h4 class="text-xs font-semibold text-accentgold mb-1">Tautan Navigasi Bawah (Social Dock)</h4>
+                                <p class="text-[10px] text-gray-400 mb-3">Atur tombol yang ingin ditampilkan ke pengguna dengan switch ON/OFF.</p>
+                                
+                                <div class="flex flex-col gap-2.5">
+                                    
+                                    <!-- WhatsApp Toggle & URL -->
+                                    <div class="p-2.5 bg-gray-900/90 rounded-xl border border-gray-700/80 flex flex-col gap-1.5">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-medium text-emerald-400 flex items-center gap-1.5">
+                                                💬 WhatsApp
+                                            </span>
+                                            <label class="relative inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" id="toggle-whatsapp" class="sr-only peer" checked onchange="updateToggleLabel(this, 'label-toggle-wa')">
+                                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-500"></div>
+                                                <span id="label-toggle-wa" class="ml-2 text-[10px] font-bold text-emerald-400">ON</span>
+                                            </label>
+                                        </div>
+                                        <input type="url" id="profile-input-whatsapp" placeholder="https://wa.me/..."
+                                               class="w-full bg-gray-800 border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-brandorange">
+                                    </div>
+
+                                    <!-- Instagram Toggle & URL -->
+                                    <div class="p-2.5 bg-gray-900/90 rounded-xl border border-gray-700/80 flex flex-col gap-1.5">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-medium text-pink-400 flex items-center gap-1.5">
+                                                📷 Instagram
+                                            </span>
+                                            <label class="relative inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" id="toggle-instagram" class="sr-only peer" checked onchange="updateToggleLabel(this, 'label-toggle-ig')">
+                                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-pink-500"></div>
+                                                <span id="label-toggle-ig" class="ml-2 text-[10px] font-bold text-pink-400">ON</span>
+                                            </label>
+                                        </div>
+                                        <input type="url" id="profile-input-instagram" placeholder="https://instagram.com/..."
+                                               class="w-full bg-gray-800 border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-brandorange">
+                                    </div>
+
+                                    <!-- YouTube Toggle & URL -->
+                                    <div class="p-2.5 bg-gray-900/90 rounded-xl border border-gray-700/80 flex flex-col gap-1.5">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-medium text-red-400 flex items-center gap-1.5">
+                                                ▶️ YouTube
+                                            </span>
+                                            <label class="relative inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" id="toggle-youtube" class="sr-only peer" checked onchange="updateToggleLabel(this, 'label-toggle-yt')">
+                                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-red-500"></div>
+                                                <span id="label-toggle-yt" class="ml-2 text-[10px] font-bold text-red-400">ON</span>
+                                            </label>
+                                        </div>
+                                        <input type="url" id="profile-input-youtube" placeholder="https://youtube.com/..."
+                                               class="w-full bg-gray-800 border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-brandorange">
+                                    </div>
+
+                                    <!-- Maps Toggle & URL -->
+                                    <div class="p-2.5 bg-gray-900/90 rounded-xl border border-gray-700/80 flex flex-col gap-1.5">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-medium text-amber-400 flex items-center gap-1.5">
+                                                📍 Google Maps
+                                            </span>
+                                            <label class="relative inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" id="toggle-maps" class="sr-only peer" checked onchange="updateToggleLabel(this, 'label-toggle-maps')">
+                                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-amber-500"></div>
+                                                <span id="label-toggle-maps" class="ml-2 text-[10px] font-bold text-amber-400">ON</span>
+                                            </label>
+                                        </div>
+                                        <input type="url" id="profile-input-maps" placeholder="https://maps.google.com/..."
+                                               class="w-full bg-gray-800 border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-brandorange">
+                                    </div>
+
+                                    <!-- Website Toggle & URL -->
+                                    <div class="p-2.5 bg-gray-900/90 rounded-xl border border-gray-700/80 flex flex-col gap-1.5">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-medium text-blue-400 flex items-center gap-1.5">
+                                                🌐 Website Resmi
+                                            </span>
+                                            <label class="relative inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" id="toggle-website" class="sr-only peer" checked onchange="updateToggleLabel(this, 'label-toggle-web')">
+                                                <div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-500"></div>
+                                                <span id="label-toggle-web" class="ml-2 text-[10px] font-bold text-blue-400">ON</span>
+                                            </label>
+                                        </div>
+                                        <input type="url" id="profile-input-website" placeholder="https://milestoneenglish.com"
+                                               class="w-full bg-gray-800 border border-gray-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-brandorange">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <button type="submit" id="btn-save-profile" class="w-full bg-brandorange hover:bg-orange-500 text-white font-semibold py-2.5 rounded-xl text-xs transition-colors mt-2">
+                                Simpan Data
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- TAB 3: GANTI PIN KEAMANAN -->
+                <div id="tab-content-security" class="hidden flex flex-col gap-4">
+                    <div class="bg-gray-800/80 p-4 rounded-2xl border border-gray-700/80">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-brandorange mb-3">Keamanan Admin</h3>
+                        <form id="change-pin-form" onsubmit="handleChangePin(event)" class="flex flex-col gap-3">
+                            <div>
+                                <label class="text-[11px] text-gray-400 block mb-1">PIN Saat Ini</label>
+                                <input type="password" id="input-current-pin" required
+                                       class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                            </div>
+                            <div>
+                                <label class="text-[11px] text-gray-400 block mb-1">PIN Baru (Minimal 4 angka/karakter)</label>
+                                <input type="password" id="input-new-pin" required minlength="4"
+                                       class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                            </div>
+                            <button type="submit" id="btn-change-pin" class="w-full bg-brandorange hover:bg-orange-500 text-white font-semibold py-2.5 rounded-xl text-xs transition-colors mt-2">
+                                Simpan PIN Baru
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- VIEW 3: MODAL EDIT TOMBOL TAUTAN                               -->
+        <!-- ============================================================== -->
+        <div id="modal-edit-link" class="hidden fixed inset-0 z-[90] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+            <div class="w-full max-w-xs bg-darkcard border border-brandorange/70 rounded-3xl p-5 shadow-2xl fade-in text-left">
+                <div class="flex items-center justify-between mb-3 border-b border-gray-700/80 pb-2">
+                    <h3 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+                        <span class="text-brandorange">✏️</span> Edit Tombol
+                    </h3>
+                    <button onclick="closeEditModal()" class="text-gray-400 hover:text-white text-xs p-1">✕</button>
+                </div>
+                <form id="edit-link-form" onsubmit="handleSaveEditLink(event)" class="flex flex-col gap-2.5">
+                    <input type="hidden" id="edit-link-id">
+                    <div>
+                        <label class="text-[10px] text-gray-400 block mb-1 font-medium">Nama Tombol</label>
+                        <input type="text" id="edit-link-title" required
+                               class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white uppercase focus:outline-none focus:border-brandorange">
+                    </div>
+                    <div>
+                        <label class="text-[10px] text-gray-400 block mb-1 font-medium">URL Tujuan</label>
+                        <input type="url" id="edit-link-url" required
+                               class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brandorange">
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                        <button type="button" onclick="closeEditModal()" class="w-1/2 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-xs font-medium text-gray-300 transition-colors">Batal</button>
+                        <button type="submit" id="btn-save-edit-link" class="w-1/2 py-2 rounded-xl bg-brandorange hover:bg-orange-500 text-xs font-semibold text-white transition-colors">Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- VIEW 4: POP UP DIALOG TERPUSAT (KOTAK KECIL SISTEM DI TENGAH)   -->
+        <!-- ============================================================== -->
+        <div id="system-popup" class="hidden fixed inset-0 z-[100] bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+            <div id="popup-box" class="w-full max-w-xs bg-darkcard border border-brandorange/80 rounded-3xl p-5 text-center shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_25px_rgba(243,119,55,0.25)] fade-in transform scale-100 transition-all">
+                <div id="popup-icon-container" class="w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center shadow-lg"></div>
+                <h3 id="popup-title" class="text-sm font-bold text-white mb-1.5 font-brand tracking-wider">Notifikasi</h3>
+                <p id="popup-message" class="text-xs text-gray-300 leading-relaxed mb-4 px-2">Pesan notifikasi</p>
+                <div id="popup-actions" class="flex gap-2 justify-center"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script Aplikasi Frontend & Google Apps Script Client -->
+    <script>
+        const isGas = typeof google !== 'undefined' && google.script && google.script.run;
+        // Opsional: Masukkan URL Google Apps Script Web App (/exec) jika ingin data tersambung saat di-host di GitHub Pages
+        const GAS_API_URL = "";
+        const DEFAULT_LOGO = 'data:image/jpeg;base64,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';
+
+        // Data State Aplikasi
+        let appState = {
+            profile: {
+                username: "MILESTONE ENGLISH",
+                tagline: "ACADEMY & LANGUAGE CENTER",
+                bio: "Ruang belajar modern yang dirancang untuk memberikan kenyamanan, kepercayaan diri, dan pengalaman belajar bahasa Inggris yang menyenangkan serta berorientasi pada pencapaian nyata.",
+                photo: "logo.jpg",
+                banner: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+                whatsapp: "https://wa.me/6281234567890",
+                show_whatsapp: true,
+                instagram: "https://instagram.com/milestoneenglish",
+                show_instagram: true,
+                youtube: "https://youtube.com/@milestoneenglish",
+                show_youtube: true,
+                maps: "https://maps.google.com/?q=Milestone+English",
+                show_maps: true,
+                website: "https://milestoneenglish.com",
+                show_website: true
+            },
+            links: [
+                { id: '1', title: "WHATSAPP", url: "https://wa.me/6281234567890" },
+                { id: '2', title: "PROGRAM KELAS", url: "https://milestoneenglish.com/programs" },
+                { id: '3', title: "TENTANG KAMI", url: "https://milestoneenglish.com/about" },
+                { id: '4', title: "LOKASI KAMPUS", url: "https://maps.google.com/?q=Milestone+English" },
+                { id: '5', title: "TES LEVEL GRATIS", url: "https://milestoneenglish.com/placement-test" },
+                { id: '6', title: "BIAYA & JADWAL", url: "https://milestoneenglish.com/pricing" }
+            ]
+        };
+
+        // DOM Elements
+        const loadingSkeleton = document.getElementById('loading-skeleton');
+        const publicLinksContainer = document.getElementById('public-links-container');
+        const publicUsername = document.getElementById('public-username');
+        const publicTagline = document.getElementById('public-tagline');
+        const publicBio = document.getElementById('public-bio');
+        const publicPhoto = document.getElementById('public-photo');
+        const publicBanner = document.getElementById('public-banner');
+        const footerCopyright = document.getElementById('footer-copyright');
+        const viewAdmin = document.getElementById('view-admin');
+
+        // Social Button Elements
+        const socialDockContainer = document.getElementById('social-dock-container');
+        const wrapperSocialWhatsapp = document.getElementById('wrapper-social-whatsapp');
+        const btnSocialWhatsapp = document.getElementById('btn-social-whatsapp');
+        const btnSocialInstagram = document.getElementById('btn-social-instagram');
+        const btnSocialYoutube = document.getElementById('btn-social-youtube');
+        const btnSocialMaps = document.getElementById('btn-social-maps');
+        const btnSocialWebsite = document.getElementById('btn-social-website');
+
+        // Pop Up Elements
+        const systemPopup = document.getElementById('system-popup');
+        const popupIconContainer = document.getElementById('popup-icon-container');
+        const popupTitle = document.getElementById('popup-title');
+        const popupMessage = document.getElementById('popup-message');
+        const popupActions = document.getElementById('popup-actions');
+        let popupTimer = null;
+
+        // ==============================================================
+        // SISTEM POP UP KOTAK KECIL DI TENGAH (SYSTEM THEME)
+        // ==============================================================
+        function showPopup(message, isError = false, title = "Notifikasi", autoCloseMs = 2000) {
+            if (popupTimer) clearTimeout(popupTimer);
+
+            popupTitle.textContent = title;
+            popupMessage.textContent = message;
+
+            if (isError) {
+                popupIconContainer.className = "w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center bg-red-500/20 text-red-400 border border-red-500/40 shadow-[0_0_15px_rgba(239,68,68,0.4)]";
+                popupIconContainer.innerHTML = `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>`;
+            } else {
+                popupIconContainer.className = "w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-[0_0_15px_rgba(16,185,129,0.4)]";
+                popupIconContainer.innerHTML = `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>`;
+            }
+
+            popupActions.innerHTML = `
+                <button onclick="closePopup()" class="px-5 py-2 rounded-xl bg-brandorange hover:bg-orange-500 text-xs font-semibold text-white transition-colors">
+                    OK
+                </button>
+            `;
+
+            systemPopup.classList.remove('hidden');
+
+            if (autoCloseMs > 0) {
+                popupTimer = setTimeout(() => {
+                    closePopup();
+                }, autoCloseMs);
+            }
+        }
+
+        function showConfirmPopup(title, message, onConfirm) {
+            if (popupTimer) clearTimeout(popupTimer);
+
+            popupTitle.textContent = title;
+            popupMessage.textContent = message;
+            popupIconContainer.className = "w-12 h-12 rounded-full mx-auto mb-3 flex items-center justify-center bg-amber-500/20 text-amber-400 border border-amber-500/40 shadow-[0_0_15px_rgba(245,158,11,0.4)]";
+            popupIconContainer.innerHTML = `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`;
+
+            popupActions.innerHTML = `
+                <button onclick="closePopup()" class="w-1/2 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-xs font-medium text-gray-300 transition-colors">
+                    Batal
+                </button>
+                <button id="btn-popup-confirm" class="w-1/2 py-2 rounded-xl bg-red-500 hover:bg-red-600 text-xs font-semibold text-white transition-colors">
+                    Hapus
+                </button>
+            `;
+
+            document.getElementById('btn-popup-confirm').onclick = () => {
+                closePopup();
+                if (typeof onConfirm === 'function') onConfirm();
+            };
+
+            systemPopup.classList.remove('hidden');
+        }
+
+        function closePopup() {
+            systemPopup.classList.add('hidden');
+        }
+
+        // Helper label toggle switch ON/OFF
+        function updateToggleLabel(checkbox, labelId) {
+            const label = document.getElementById(labelId);
+            if (label) {
+                label.textContent = checkbox.checked ? "ON" : "OFF";
+                label.className = `ml-2 text-[10px] font-bold ${checkbox.checked ? 'text-brandorange' : 'text-gray-500'}`;
+            }
+        }
+
+        // ==============================================================
+        // DATA LOAD & SYNC (Mendukung GAS & GitHub Pages)
+        // ==============================================================
+        function postGasApi(payload, onSuccess, onError) {
+            fetch(GAS_API_URL, {
+                method: "POST",
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
+                body: JSON.stringify(payload)
+            })
+            .then(r => r.json())
+            .then(res => { if(onSuccess) onSuccess(res); })
+            .catch(err => { if(onError) onError(err); });
+        }
+
+        function loadLocalData() {
+            const localData = localStorage.getItem('milestone_linktree_data');
+            if (localData) {
+                try {
+                    const parsed = JSON.parse(localData);
+                    if (parsed && parsed.profile) {
+                        if (parsed.profile.photo && parsed.profile.photo.includes('1573496359142')) {
+                            parsed.profile.photo = 'logo.jpg';
+                            localStorage.setItem('milestone_linktree_data', JSON.stringify(parsed));
+                        }
+                        appState = parsed;
+                    }
+                } catch(e){}
+            }
+            onDataLoaded({ success: true, profile: appState.profile, links: appState.links });
+        }
+
+        function loadData() {
+            let hasLoaded = false;
+            const fallbackTimer = setTimeout(() => {
+                if (!hasLoaded) {
+                    loadingSkeleton.classList.add('hidden');
+                    renderPublicView();
+                }
+            }, 2500);
+
+            if (isGas) {
+                google.script.run
+                    .withSuccessHandler((res) => {
+                        hasLoaded = true;
+                        clearTimeout(fallbackTimer);
+                        onDataLoaded(res);
+                    })
+                    .withFailureHandler((err) => {
+                        hasLoaded = true;
+                        clearTimeout(fallbackTimer);
+                        loadingSkeleton.classList.add('hidden');
+                        renderPublicView();
+                    })
+                    .getPublicData();
+            } else if (GAS_API_URL && GAS_API_URL.trim() !== "") {
+                fetch(GAS_API_URL + (GAS_API_URL.includes('?') ? '&' : '?') + "action=getPublicData")
+                    .then(res => res.json())
+                    .then(res => {
+                        hasLoaded = true;
+                        clearTimeout(fallbackTimer);
+                        onDataLoaded(res);
+                    })
+                    .catch(err => {
+                        hasLoaded = true;
+                        clearTimeout(fallbackTimer);
+                        loadLocalData();
+                    });
+            } else {
+                hasLoaded = true;
+                clearTimeout(fallbackTimer);
+                loadLocalData();
+            }
+        }
+
+        function onDataLoaded(res) {
+            loadingSkeleton.classList.add('hidden');
+            if (res && res.success) {
+                appState.profile = Object.assign(appState.profile, res.profile);
+                if (!appState.profile.photo || appState.profile.photo === 'DEFAULT_LOGO' || appState.profile.photo.includes('1573496359142')) {
+                    appState.profile.photo = 'logo.jpg';
+                }
+                appState.links = res.links && res.links.length > 0 ? res.links : appState.links;
+                renderPublicView();
+                renderAdminView();
+            }
+        }
+
+        // ==============================================================
+        // RENDER TAMPILAN PUBLIK
+        // ==============================================================
+        function renderPublicView() {
+            publicUsername.textContent = appState.profile.username || "MILESTONE ENGLISH";
+            publicTagline.textContent = appState.profile.tagline || "ACADEMY & LANGUAGE CENTER";
+            publicBio.textContent = appState.profile.bio || "";
+            
+            const curPhoto = appState.profile.photo;
+            if (curPhoto && curPhoto !== 'DEFAULT_LOGO' && !curPhoto.includes('1573496359142')) {
+                publicPhoto.src = curPhoto;
+            } else {
+                publicPhoto.src = 'logo.jpg';
+            }
+            publicPhoto.onerror = function() {
+                this.onerror = null;
+                this.src = DEFAULT_LOGO;
+            };
+
+            if (appState.profile.banner) publicBanner.src = appState.profile.banner;
+            
+            document.title = `${appState.profile.username} | Official`;
+            footerCopyright.textContent = `© ${new Date().getFullYear()} ${appState.profile.username}. All rights reserved.`;
+
+            // Render Tombol Navigasi Bawah Berdasarkan Status ON / OFF
+            const isWAOn = (appState.profile.show_whatsapp !== false && appState.profile.show_whatsapp !== "false") && Boolean(appState.profile.whatsapp);
+            const isIGOn = (appState.profile.show_instagram !== false && appState.profile.show_instagram !== "false") && Boolean(appState.profile.instagram);
+            const isYTOn = (appState.profile.show_youtube !== false && appState.profile.show_youtube !== "false") && Boolean(appState.profile.youtube);
+            const isMapsOn = (appState.profile.show_maps !== false && appState.profile.show_maps !== "false") && Boolean(appState.profile.maps);
+            const isWebOn = (appState.profile.show_website !== false && appState.profile.show_website !== "false") && Boolean(appState.profile.website);
+
+            // Set link href
+            btnSocialWhatsapp.href = appState.profile.whatsapp || "#";
+            btnSocialInstagram.href = appState.profile.instagram || "#";
+            btnSocialYoutube.href = appState.profile.youtube || "#";
+            btnSocialMaps.href = appState.profile.maps || "#";
+            btnSocialWebsite.href = appState.profile.website || "#";
+
+            // Sembunyikan atau tampilkan elemen individu
+            wrapperSocialWhatsapp.style.display = isWAOn ? 'flex' : 'none';
+            btnSocialInstagram.style.display = isIGOn ? 'flex' : 'none';
+            btnSocialYoutube.style.display = isYTOn ? 'flex' : 'none';
+            btnSocialMaps.style.display = isMapsOn ? 'flex' : 'none';
+            btnSocialWebsite.style.display = isWebOn ? 'flex' : 'none';
+
+            // Jika semua tombol OFF, sembunyikan seluruh kontainer navigasi bawah
+            const anySocialActive = isWAOn || isIGOn || isYTOn || isMapsOn || isWebOn;
+            socialDockContainer.style.display = anySocialActive ? 'block' : 'none';
+
+            // Render Tombol Tautan Kapsul (Grid 2 Kolom)
+            publicLinksContainer.innerHTML = '';
+            publicLinksContainer.classList.remove('hidden');
+
+            appState.links.forEach((link, idx) => {
+                const a = document.createElement('a');
+                a.href = link.url;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                a.className = 'capsule-btn fade-in flex items-center justify-center py-3.5 px-3 rounded-full text-white no-underline font-semibold text-xs tracking-[0.14em] uppercase text-center relative overflow-hidden select-none';
+                a.style.animationDelay = `${idx * 0.05}s`;
+
+                a.innerHTML = `<span>${escapeHtml(link.title)}</span>`;
+                publicLinksContainer.appendChild(a);
+            });
+        }
+
+        // ==============================================================
+        // RENDER DASHBOARD ADMIN
+        // ==============================================================
+        function renderAdminView() {
+            // Form Profil
+            document.getElementById('profile-input-username').value = appState.profile.username || '';
+            document.getElementById('profile-input-tagline').value = appState.profile.tagline || '';
+            document.getElementById('profile-input-bio').value = appState.profile.bio || '';
+            document.getElementById('profile-input-photo').value = appState.profile.photo || '';
+            document.getElementById('profile-input-banner').value = appState.profile.banner || '';
+            
+            document.getElementById('profile-input-whatsapp').value = appState.profile.whatsapp || '';
+            document.getElementById('profile-input-instagram').value = appState.profile.instagram || '';
+            document.getElementById('profile-input-youtube').value = appState.profile.youtube || '';
+            document.getElementById('profile-input-maps').value = appState.profile.maps || '';
+            document.getElementById('profile-input-website').value = appState.profile.website || '';
+
+            // Toggles Navigasi Bawah
+            const setToggle = (id, labelId, val) => {
+                const chk = document.getElementById(id);
+                const isChecked = (val !== false && val !== "false");
+                chk.checked = isChecked;
+                updateToggleLabel(chk, labelId);
+            };
+
+            setToggle('toggle-whatsapp', 'label-toggle-wa', appState.profile.show_whatsapp);
+            setToggle('toggle-instagram', 'label-toggle-ig', appState.profile.show_instagram);
+            setToggle('toggle-youtube', 'label-toggle-yt', appState.profile.show_youtube);
+            setToggle('toggle-maps', 'label-toggle-maps', appState.profile.show_maps);
+            setToggle('toggle-website', 'label-toggle-web', appState.profile.show_website);
+
+            // List Tombol Aktif dengan Tombol Edit & Hapus
+            const adminList = document.getElementById('admin-links-list');
+            const countEl = document.getElementById('links-count');
+            countEl.textContent = `${appState.links.length} tombol`;
+            adminList.innerHTML = '';
+
+            appState.links.forEach((link) => {
+                const item = document.createElement('div');
+                item.className = 'bg-gray-800 p-3 rounded-2xl border border-gray-700/80 flex items-center justify-between gap-3';
+
+                item.innerHTML = `
+                    <div class="flex-grow min-w-0">
+                        <h4 class="text-xs font-bold text-white uppercase tracking-wider truncate">${escapeHtml(link.title)}</h4>
+                        <p class="text-[11px] text-gray-400 truncate mt-0.5">${escapeHtml(link.url)}</p>
+                    </div>
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        <button onclick="openEditModal('${link.id}')" title="Edit Tombol" class="p-2 text-amber-400 hover:text-amber-300 hover:bg-amber-400/10 rounded-xl transition-colors">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                        </button>
+                        <button onclick="handleDeleteLink('${link.id}')" title="Hapus Tombol" class="p-2 text-red-400 hover:text-red-300 hover:bg-red-400/10 rounded-xl transition-colors">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                        </button>
+                    </div>
+                `;
+                adminList.appendChild(item);
+            });
+        }
+
+        // ==============================================================
+        // AKSI ADMIN (DENGAN PROTEKSI PIN KEAMANAN)
+        // ==============================================================
+        function handleAdminClick() {
+            const savedPin = sessionStorage.getItem('admin_pin');
+            if (savedPin) {
+                openAdminDashboard();
+            } else {
+                document.getElementById('modal-pin').classList.remove('hidden');
+                document.getElementById('input-pin').value = '';
+                setTimeout(() => document.getElementById('input-pin').focus(), 150);
+            }
+        }
+
+        function closeAdminPinModal() {
+            document.getElementById('modal-pin').classList.add('hidden');
+            document.getElementById('input-pin').value = '';
+        }
+
+        function handlePinSubmit(e) {
+            e.preventDefault();
+            const pinVal = document.getElementById('input-pin').value.trim();
+            const btn = document.getElementById('btn-submit-pin');
+            btn.textContent = '...';
+
+            if (isGas) {
+                google.script.run
+                    .withSuccessHandler((isValid) => {
+                        btn.textContent = 'Masuk';
+                        if (isValid) {
+                            sessionStorage.setItem('admin_pin', pinVal);
+                            closeAdminPinModal();
+                            openAdminDashboard();
+                        } else {
+                            showPopup("PIN yang dimasukkan salah!", true, "Akses Ditolak");
+                            document.getElementById('input-pin').value = '';
+                        }
+                    })
+                    .withFailureHandler(() => {
+                        btn.textContent = 'Masuk';
+                        showPopup("Gagal memverifikasi ke server.", true);
+                    })
+                    .verifyPin(pinVal);
+            } else if (GAS_API_URL && GAS_API_URL.trim() !== '') {
+                postGasApi({ action: "verifyPin", pin: pinVal }, (res) => {
+                    btn.textContent = 'Masuk';
+                    if (res && res.success) {
+                        sessionStorage.setItem('admin_pin', pinVal);
+                        closeAdminPinModal();
+                        openAdminDashboard();
+                    } else {
+                        showPopup("PIN yang dimasukkan salah!", true, "Akses Ditolak");
+                        document.getElementById('input-pin').value = '';
+                    }
+                }, () => {
+                    btn.textContent = 'Masuk';
+                    showPopup("Gagal memverifikasi ke server.", true);
+                });
+            } else {
+                const localPin = localStorage.getItem('milestone_admin_pin') || '1234';
+                btn.textContent = 'Masuk';
+                if (pinVal === localPin) {
+                    sessionStorage.setItem('admin_pin', pinVal);
+                    closeAdminPinModal();
+                    openAdminDashboard();
+                } else {
+                    showPopup("PIN yang dimasukkan salah!", true, "Akses Ditolak");
+                    document.getElementById('input-pin').value = '';
+                }
+            }
+        }
+
+        function openAdminDashboard() {
+            viewAdmin.classList.remove('hidden');
+            renderAdminView();
+        }
+
+        function closeAdminDashboard() {
+            viewAdmin.classList.add('hidden');
+        }
+
+        function handleLogout() {
+            sessionStorage.removeItem('admin_pin');
+            closeAdminDashboard();
+            showPopup("Berhasil keluar dari admin.");
+        }
+
+        function switchAdminTab(tabName) {
+            const tabs = ['links', 'profile', 'security'];
+            tabs.forEach(t => {
+                const content = document.getElementById(`tab-content-${t}`);
+                const btn = document.getElementById(`tab-btn-${t}`);
+                if (content && btn) {
+                    if (t === tabName) {
+                        content.classList.remove('hidden');
+                        btn.classList.add('text-brandorange', 'border-brandorange');
+                        btn.classList.remove('text-gray-400', 'border-transparent');
+                    } else {
+                        content.classList.add('hidden');
+                        btn.classList.remove('text-brandorange', 'border-brandorange');
+                        btn.classList.add('text-gray-400', 'border-transparent');
+                    }
+                }
+            });
+        }
+
+        // Tambah Tombol Baru
+        function handleAddLink(e) {
+            e.preventDefault();
+            const title = document.getElementById('input-title').value.trim().toUpperCase();
+            const url = document.getElementById('input-url').value.trim();
+            const btn = document.getElementById('btn-add-link');
+
+            btn.disabled = true;
+            btn.innerHTML = `Menyimpan...`;
+
+            const newLink = { title, url, image: "" };
+
+            if (isGas) {
+                google.script.run
+                    .withSuccessHandler((res) => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan`;
+                        if (res.success) {
+                            showPopup(res.message);
+                            document.getElementById('add-link-form').reset();
+                            loadData();
+                        } else {
+                            showPopup(res.message, true);
+                        }
+                    })
+                    .withFailureHandler(() => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan`;
+                        showPopup("Terjadi kendala saat menyimpan.", true);
+                    })
+                    .addLink(newLink);
+            } else if (GAS_API_URL && GAS_API_URL.trim() !== '') {
+                postGasApi({ action: "addLink", linkData: newLink }, (res) => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan`;
+                    if (res && res.success) {
+                        showPopup(res.message);
+                        document.getElementById('add-link-form').reset();
+                        loadData();
+                    } else {
+                        showPopup((res && res.message) || "Gagal menyimpan.", true);
+                    }
+                }, () => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan`;
+                    showPopup("Terjadi kendala saat menyimpan ke Google Sheets.", true);
+                });
+            } else {
+                newLink.id = Date.now().toString();
+                appState.links.push(newLink);
+                localStorage.setItem('milestone_linktree_data', JSON.stringify(appState));
+                btn.disabled = false;
+                btn.innerHTML = `Simpan`;
+                document.getElementById('add-link-form').reset();
+                renderPublicView();
+                renderAdminView();
+                showPopup("Tombol berhasil ditambahkan!");
+            }
+        }
+
+        // Buka Modal Edit Tombol
+        function openEditModal(linkId) {
+            const link = appState.links.find(l => l.id === linkId);
+            if (!link) return;
+
+            document.getElementById('edit-link-id').value = link.id;
+            document.getElementById('edit-link-title').value = link.title;
+            document.getElementById('edit-link-url').value = link.url;
+            document.getElementById('modal-edit-link').classList.remove('hidden');
+        }
+
+        function closeEditModal() {
+            document.getElementById('modal-edit-link').classList.add('hidden');
+        }
+
+        // Simpan Perubahan Edit Tombol
+        function handleSaveEditLink(e) {
+            e.preventDefault();
+            const id = document.getElementById('edit-link-id').value;
+            const title = document.getElementById('edit-link-title').value.trim().toUpperCase();
+            const url = document.getElementById('edit-link-url').value.trim();
+            const btn = document.getElementById('btn-save-edit-link');
+
+            btn.disabled = true;
+            btn.innerHTML = `Menyimpan...`;
+
+            const updatedLink = { id, title, url };
+
+            if (isGas) {
+                google.script.run
+                    .withSuccessHandler((res) => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan`;
+                        closeEditModal();
+                        if (res.success) {
+                            showPopup(res.message);
+                            loadData();
+                        } else {
+                            showPopup(res.message, true);
+                        }
+                    })
+                    .withFailureHandler(() => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan`;
+                        showPopup("Gagal memperbarui tombol.", true);
+                    })
+                    .editLink(updatedLink);
+            } else if (GAS_API_URL && GAS_API_URL.trim() !== '') {
+                postGasApi({ action: "editLink", linkData: updatedLink }, (res) => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan`;
+                    closeEditModal();
+                    if (res && res.success) {
+                        showPopup(res.message);
+                        loadData();
+                    } else {
+                        showPopup((res && res.message) || "Gagal memperbarui tombol.", true);
+                    }
+                }, () => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan`;
+                    showPopup("Gagal memperbarui tombol ke server.", true);
+                });
+            } else {
+                const index = appState.links.findIndex(l => l.id === id);
+                if (index !== -1) {
+                    appState.links[index].title = title;
+                    appState.links[index].url = url;
+                    localStorage.setItem('milestone_linktree_data', JSON.stringify(appState));
+                }
+                btn.disabled = false;
+                btn.innerHTML = `Simpan`;
+                closeEditModal();
+                renderPublicView();
+                renderAdminView();
+                showPopup("Tombol berhasil diperbarui!");
+            }
+        }
+
+        // Hapus Tombol (Menggunakan Pop Up Konfirmasi Terpusat)
+        function handleDeleteLink(linkId) {
+            showConfirmPopup("Konfirmasi Hapus", "Hapus tombol ini?", () => {
+                if (isGas) {
+                    google.script.run
+                        .withSuccessHandler((res) => {
+                            if (res.success) {
+                                showPopup(res.message);
+                                loadData();
+                            } else {
+                                showPopup(res.message, true);
+                            }
+                        })
+                        .withFailureHandler(() => {
+                            showPopup("Gagal menghapus tombol.", true);
+                        })
+                        .deleteLink(linkId);
+                } else if (GAS_API_URL && GAS_API_URL.trim() !== '') {
+                    postGasApi({ action: "deleteLink", linkId: linkId }, (res) => {
+                        if (res && res.success) {
+                            showPopup(res.message);
+                            loadData();
+                        } else {
+                            showPopup((res && res.message) || "Gagal menghapus tombol.", true);
+                        }
+                    }, () => {
+                        showPopup("Gagal menghapus tombol di server.", true);
+                    });
+                } else {
+                    appState.links = appState.links.filter(l => l.id !== linkId);
+                    localStorage.setItem('milestone_linktree_data', JSON.stringify(appState));
+                    renderPublicView();
+                    renderAdminView();
+                    showPopup("Tombol berhasil dihapus!");
+                }
+            });
+        }
+
+        // Simpan Profil & Navigasi Bawah
+        function handleUpdateProfile(e) {
+            e.preventDefault();
+            const username = document.getElementById('profile-input-username').value.trim();
+            const tagline = document.getElementById('profile-input-tagline').value.trim();
+            const bio = document.getElementById('profile-input-bio').value.trim();
+            const photo = document.getElementById('profile-input-photo').value.trim();
+            const banner = document.getElementById('profile-input-banner').value.trim();
+            
+            const whatsapp = document.getElementById('profile-input-whatsapp').value.trim();
+            const show_whatsapp = document.getElementById('toggle-whatsapp').checked;
+            
+            const instagram = document.getElementById('profile-input-instagram').value.trim();
+            const show_instagram = document.getElementById('toggle-instagram').checked;
+            
+            const youtube = document.getElementById('profile-input-youtube').value.trim();
+            const show_youtube = document.getElementById('toggle-youtube').checked;
+            
+            const maps = document.getElementById('profile-input-maps').value.trim();
+            const show_maps = document.getElementById('toggle-maps').checked;
+            
+            const website = document.getElementById('profile-input-website').value.trim();
+            const show_website = document.getElementById('toggle-website').checked;
+
+            const btn = document.getElementById('btn-save-profile');
+            btn.disabled = true;
+            btn.innerHTML = `Menyimpan...`;
+
+            const profileData = {
+                username, tagline, bio, photo, banner,
+                whatsapp, show_whatsapp,
+                instagram, show_instagram,
+                youtube, show_youtube,
+                maps, show_maps,
+                website, show_website
+            };
+
+            if (isGas) {
+                google.script.run
+                    .withSuccessHandler((res) => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan Data`;
+                        if (res.success) {
+                            showPopup(res.message);
+                            loadData();
+                        } else {
+                            showPopup(res.message, true);
+                        }
+                    })
+                    .withFailureHandler(() => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan Data`;
+                        showPopup("Gagal menyimpan data.", true);
+                    })
+                    .updateProfile(profileData);
+            } else if (GAS_API_URL && GAS_API_URL.trim() !== '') {
+                postGasApi({ action: "updateProfile", profileData: profileData }, (res) => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan Data`;
+                    if (res && res.success) {
+                        showPopup(res.message);
+                        loadData();
+                    } else {
+                        showPopup((res && res.message) || "Gagal menyimpan data.", true);
+                    }
+                }, () => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan Data`;
+                    showPopup("Gagal menyimpan data ke server.", true);
+                });
+            } else {
+                appState.profile = profileData;
+                localStorage.setItem('milestone_linktree_data', JSON.stringify(appState));
+                btn.disabled = false;
+                btn.innerHTML = `Simpan Data`;
+                renderPublicView();
+                showPopup("Data berhasil disimpan!");
+            }
+        }
+
+        // Ganti PIN Admin
+        function handleChangePin(e) {
+            e.preventDefault();
+            const currentPin = document.getElementById('input-current-pin').value.trim();
+            const newPin = document.getElementById('input-new-pin').value.trim();
+            const btn = document.getElementById('btn-change-pin');
+
+            btn.disabled = true;
+            btn.innerHTML = `Menyimpan...`;
+
+            if (isGas) {
+                google.script.run
+                    .withSuccessHandler((res) => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan PIN Baru`;
+                        if (res.success) {
+                            showPopup(res.message);
+                            sessionStorage.setItem('admin_pin', newPin);
+                            document.getElementById('change-pin-form').reset();
+                        } else {
+                            showPopup(res.message, true);
+                        }
+                    })
+                    .withFailureHandler(() => {
+                        btn.disabled = false;
+                        btn.innerHTML = `Simpan PIN Baru`;
+                        showPopup("Gagal mengubah PIN.", true);
+                    })
+                    .changeAdminPin(currentPin, newPin);
+            } else if (GAS_API_URL && GAS_API_URL.trim() !== '') {
+                postGasApi({ action: "changePin", currentPin: currentPin, newPin: newPin }, (res) => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan PIN Baru`;
+                    if (res && res.success) {
+                        showPopup(res.message);
+                        sessionStorage.setItem('admin_pin', newPin);
+                        document.getElementById('change-pin-form').reset();
+                    } else {
+                        showPopup((res && res.message) || "Gagal mengubah PIN.", true);
+                    }
+                }, () => {
+                    btn.disabled = false;
+                    btn.innerHTML = `Simpan PIN Baru`;
+                    showPopup("Gagal mengubah PIN di server.", true);
+                });
+            } else {
+                const localPin = localStorage.getItem('milestone_admin_pin') || '1234';
+                btn.disabled = false;
+                btn.innerHTML = `Simpan PIN Baru`;
+                if (currentPin === localPin) {
+                    localStorage.setItem('milestone_admin_pin', newPin);
+                    sessionStorage.setItem('admin_pin', newPin);
+                    document.getElementById('change-pin-form').reset();
+                    showPopup("PIN berhasil diperbarui!");
+                } else {
+                    showPopup("PIN saat ini salah!", true);
+                }
+            }
+        }
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return String(text).replace(/[&<>"']/g, function(m) { return map[m]; });
+        }
+
+        function setupPWA() {
+            try {
+                const manifest = {
+                    "name": "Milestone English",
+                    "short_name": "Milestone",
+                    "start_url": ".",
+                    "display": "standalone",
+                    "background_color": "#101c33",
+                    "theme_color": "#101c33",
+                    "icons": [
+                        {
+                            "src": "logo.jpg",
+                            "sizes": "192x192",
+                            "type": "image/jpeg"
+                        }
+                    ]
+                };
+                const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+                document.getElementById('manifest-link').setAttribute('href', URL.createObjectURL(blob));
+            } catch(e) {
+                console.warn("PWA setup skipped in restricted webview", e);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupPWA();
+            loadData();
+        });
+    </script>
+</body>
+</html>
